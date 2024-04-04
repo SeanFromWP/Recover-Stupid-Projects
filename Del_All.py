@@ -12,12 +12,16 @@ X) Proj Mix
 
 So what do you want to delete: '''))
 
-Options = {"1": "Rick.bat", "2": "Shut.bat", "3": "Stuck.bat", "M": "Memories.bat", "X": "Mix.bat"}
+Options = {"1": "Rick.bat", "2": "Shut.bat", "3": "Stuck.bat", "M": "Memories.bat", "X": "Mix.py"}
+
+target = r'%AppData%\Microsoft\Windows\Start Menu\Programs\Startup'
+command = f'cd /d {target} && del {files}'
 
 for char in require:
     if char.isalnum():
         files = Options.get(char.upper())
         if files is not None:
-            command = 
-            os.system(f'cd /d r'%AppData%\Microsoft\Windows\Start Menu\Programs\Startup' && del {files}')
+            os.system(command)
             print(f"{files} 已經刪除")
+        else:
+            print(f"{files} XD")
