@@ -12,7 +12,7 @@ X) Proj Mix
 
 So what do you want to delete: '''))
 
-Options = {"1": "Rick.bat", "2": "Shut.bat", "3": "Stuck.bat", "M": "Memories.bat", "X": "Mix.bat"}
+Options = {"1": "Rick.bat", "2": "Shut.bat", "3": "Stuck.bat", "M": "Memories.bat", "X": "Mix.py"}
 
 target = r'%AppData%\Microsoft\Windows\Start Menu\Programs\Startup'
 
